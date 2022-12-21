@@ -1,0 +1,122 @@
+<DOCTYPE! html>   
+<html lang="eng">
+    <style> table, th, td {border:1px solid black;}
+    </style>
+<body>
+    <h2>Osnovna tablica s okvirima</h2>
+<table style="width:100%;">
+    <thead>
+<tr>
+    <th>Naziv 1</th>
+    <th>Naziv 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>ćelija 1, u 1. retku</td>
+    <td>ćelija 2, u 1. retku</td>
+</tr>
+<tr>
+    <td>ćelija 3 u 2.retku</td>
+    <td>ćelija 4 u 2.retku</td>
+</tr>
+</tbody> 
+</table>
+</body>
+</html>
+
+<html>
+    <style>
+        table, th, td {border:2px solid black;border-collapse: collapse;/*ne želimo dupli obrub*/}
+    </style>
+    <body>
+        <h2>drugi stupac zauzima 70% širine tablice</h2>
+        <table style="width:100%">
+            <tr>
+                <th>Ime</th>
+                <th style="width:70%;">Prezime</th>
+                <th>Godine</th>
+            </tr>
+            <tr>
+                <td>Marko</td>
+                <td>Marković</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>50</td>
+            </tr>
+        </table>
+  
+        <h2>Vertikalni table naslovi</h2>
+       <p>prva kolona postaje naslov tablice u koliko se u svakom retku(tr) postavi (th) element</p> 
+       <table style=width:100%>
+        <tr>
+            <th>Ime</th>
+            <td>Marko</td>
+            <td>Ivana</td>
+        </tr>
+        <tr>
+            <th>Prezime</th>
+            <td>Marković</td>
+            <td>Ivić</td> 
+        </tr>
+       </table>
+
+  
+<h2>Primjer stupca koji se proteže kroz 3 retka</h2>
+<p>Kad želimo protegnuti redak kropz više stupaca koristimo svojstvo <strong>colspan</strong> td elementa. Dodjeljujemo mu vrijednost u kojojobrađujemo broj stupaca kroz koje se proteže redak</p>
+    <table>
+        <tr>
+            <td colspan="3" width="320">Prvi redak</td>
+        </tr>
+        <tr>
+            <td>Prvi stupac</td>
+            <td>Drugi stupac</td>
+            <td>Treći stupac</td>
+        </tr>
+    </table>
+
+<h2>Slozene tablice</h2>
+<table id="prva">
+    <tr>
+        <td>stupac 1</td>
+        <td>stupac 2</td>
+        <td>stupac 3</td>
+        <td>stupac 4</td>
+     </tr>
+     <tr>
+         <td>5
+        <td colspan="3">6</td>
+     </tr>
+     <tr>
+         <td colspan="2">7</td>
+         <td>8</td>
+         <td>9</td>
+     </tr>
+     <tr>
+         <td colspan="3">10</td>
+         <td>11</td>
+     </tr>
+</table>
+<hr>
+     <table id="druga">  
+     <tr>
+         <td rowspan="3">stupac 1</td>
+         <td rowspan="2">stupac 2</td>
+         <td>stupac 3</td>
+         <td>stupac 4</td>    
+     </tr>
+     <tr>
+         <td rowspan="2">5</td>
+         <td>6</td>
+     </tr>
+     <tr>
+       <td>7</td>
+       <td>8</td> 
+     </tr>
+</table>
+</body>
+</html>
+
