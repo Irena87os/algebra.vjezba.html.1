@@ -1,90 +1,144 @@
-<DOCTYPE! html>
-<html>
-  <html lang="en">
-    <head>
-      <meta charset="utf-8">
-   <style>table, th, td {border:1px solid  black; width:100;}</style>
-   </head>
-   <body>
-   <section>
-       <h2>Tablica 1</h2>
-   <table style="width:100%">
-    <tr>
-        <th>Ime</th>
-        <th>Prezime</th>
-        <th>Godine</th>
-        <th>Grad </th>
-    </tr>
-    <td>Ana</td>
-    <td>Ivana</td>
-    <td>Petra</td>
-    <td>Ivana</td>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="moj super web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+        table {width: 100%;}
+        </style> 
+</head>
+ 
+  <body>
+<header>
+    <a href="../index.html">Povratak na početnu</a>
+    <a href="#tablica1">Tablica 1</a>
+    <a href="#tablica2">Tablica 2</a>
+    <a href="#tablica3">Tablica 3</a>
+</header>
+<section>
+    <h2 id="tablica1">Tablica 1</h2>
+    <table>
+        <tr>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Godine</th>
+        </tr>
+        <tr>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+        </tr>
+        <tr>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+        </tr>
+        <tr>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+        </tr>
+        <tr>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+        </tr>
+        <tr>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+        </tr>
+    </table>
+</section>
 <hr>
-<h2>Tablica 2</h2>
-<table style="width:100%">
-    <tr>
-        <th>naziv 1</th>
-        <th>naziv 2</th>
-        <th>naziv 3</th>
-        <th>naziv 4</th>
-    </tr>
-    <tr>
-    <td>Ana</td>
-    <td>Ivana</td>
-    <td>Petra</td>
-    <td>Ivana</td>
-    </tr>
-</table>
+<section>
+    <h2 id="tablica2">Tablica 2</h2>
+    <table>
+        <tr>
+            <th>Redni broj</th>
+            <th>Materijal</th>
+            <th>Materijal 2</th>
+            <th>Materijal 3</th>
+            <th>Materijal 4</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Plastika</td>
+            <td>Željezo</td>
+            <td>Guma</td>
+            <td>&nbsp</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Željezo</td>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td colspan="2">Kombinacija željeza i plastike</td>
+            <td colspan="2">Kombinacija raznih materijala</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>&nbsp</td>
+            <td colspan="2">kombinacija željeza i gume</td>
+            <td>&nbsp</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td colspan="2">Kombinacija drva, željeza i plastike</td>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+        </tr>
+    </table>
+</section>
 <hr>
-<h2>Tablica 3</h2>
-<table style="width:100%"> 
-    <tr>
-        <th>naziv 1</th>
-        <th>naziv 2</th>
-        <th>naziv 3</th>
-        <th>naziv 4</th>
-    <tr>
-         <td>Ana</td>
-         <td>Ivana</td>
-         <td>Petra</td>
-         <td>Ivana</td>
-    </tr>
-    <tr>
-        <td>Ana</td>
-         <td>Ivana</td>
-         <td>Petra</td>
-         <td>Ivana</td>
-    </tr>
-</table>
-<hr>
-<h2>Tablica 4</h2>
-        <table style="width:100%">
-            <tr>
-                <th>Ime</th>
-                <th>Prezime</th>
-                <th>Godine</th>
-            </tr>
-            <tr>
-                <td>Ivana</td>
-                <td>Ivić</td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>petra</td>
-                <td>perić</td>
-                <td>25</td>
-            </tr>
-            <tr>
-                <td>Ana</td>
-                <td>anić</td>
-                <td>33</td>
-            </tr>
-                <td>vesna</td>
-                <td>vekić</td>
-                <td>36</td>
-            </tr>
-            
-   </section>
-
-      
+<section>
+    <h2 id="tablica3">Tablica 3</h2>
+    <table>
+        <tr>
+            <th>Predmet</th>
+            <th>Moguće izvedbe</th>
+            <th>Boja</th>
+            <th>Broj komada</th>
+            <th>Napomena</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Igračka 1</td>
+            <td rowspan="2">Auto</td>
+            <td>Plava</td>
+            <td>10</td>
+            <td>Pakirati pojedinačno</td>
+        </tr>
+        <tr>
+            <td>Crvena</td>
+            <td>20</td>
+            <td>Pakirati u setovima od 10 kom</td>
+        </tr>
+        <tr>
+            <td>Vlak</td>
+            <td>Zelena</td>
+            <td>5</td>
+            <td>U velike kutije</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Igračka 2</td>
+            <td rowspan="2">Medo</td>
+            <td>Roza</td>
+            <td rowspan="2">15</td>
+            <td rowspan="2">Plišani veličine 20cm</td>
+        </tr>
+        <tr>
+            <td>Smeđa</td>
+        </tr>
+    </table>
+</section>
+</body>
+</html>
