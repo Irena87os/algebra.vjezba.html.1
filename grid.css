@@ -1,0 +1,17 @@
+ {border: 1px solid black}
+ .item-a  {
+     grid-area: header;
+
+ }
+ .item-b  {
+    grid-area:main;
+    
+}
+.item-c  {
+    grid-area: sidebar;
+    
+}
+.item-d  {
+    grid-area:footer;
+    
+}
